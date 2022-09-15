@@ -1,0 +1,7 @@
+user : uid, role:{ ADMIN, CUSTOMER} ή με  isAdmin https://github.com/safak/youtube2022/blob/mern-booking/api/models/User.js, name, surname, email, password, tel
+
+hotel: uid, adminUid, name, rating, address, rooms[ room ], photos?
+
+room: uid, price, maxPeople, description, availability
+
+booking: uid, userUid, hotelUid, roomUid, startdate, endDate
