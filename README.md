@@ -8,4 +8,5 @@
 - npm install mongoose --save
 - npm install body-parser --save
 - npm install morgan --save
+- npm install --save express-validator
 
