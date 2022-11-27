@@ -17,15 +17,12 @@
         ],
         "linebreak-style": [
             "error",
-            "unix"
+            "windows"
         ],
         "quotes": [
             "error",
             "single"
         ],
-        "semi": [
-            "error",
-            "always"
-        ]
+        "semi": [2, "always"]
     }
 }

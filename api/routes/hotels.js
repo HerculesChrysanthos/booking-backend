@@ -1,11 +1,11 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
 
-const hotelsController = require('../controllers/hotels');
+const hotelsController = require('../controllers/hotels')
 
-router.get('/', hotelsController.getHotels);
+router.get('/', hotelsController.getHotels)
 
-router.post('/', hotelsController.addHotel);
+router.post('/', hotelsController.addHotel)
 
 // router.get('/:hotelId', hotelsController.getHotelById);
 
@@ -13,4 +13,4 @@ router.post('/', hotelsController.addHotel);
 
 // router.delete('/:hotelId', hotelsController.deleteHotelById);
 
-module.exports = router;
+module.exports = router
