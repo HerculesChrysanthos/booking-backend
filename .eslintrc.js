@@ -18,8 +18,10 @@ module.exports = {
 		],
 		'linebreak-style': [
 			'error',
-			'windows'
+			'unix'
 		],
+		'eslint no-multiple-empty-lines': ['error', { 'max': 1, 'maxEOF': 0 }],
+		'no-multi-spaces': ['error', { ignoreEOLComments: false }],
 		'quotes': [
 			'error',
 			'single'
@@ -27,6 +29,15 @@ module.exports = {
 		'semi': [
 			'error',
 			'always'
-		]
+		],
+		// 'prettier': ['error',
+		// 	{
+		// 		bracketSpacing: true,
+		// 		tabWidth: 2,
+		// 		trailingComma: 'es5',
+				
+		// 	}
+		// ]
+		
 	}
 };
