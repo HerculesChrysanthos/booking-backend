@@ -30,6 +30,8 @@ module.exports = {
 			'error',
 			'always'
 		],
+		'indent': [4, 'tab'],
+
 		// 'prettier': ['error',
 		// 	{
 		// 		bracketSpacing: true,
