@@ -4,9 +4,9 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-const userRoutes = require('./api/routes/users');
-const roomRoutes = require('./api/routes/rooms');
-const hotelRoutes = require('./api/routes/hotels');
+const userRoute = require('./api/routes/user.route');
+const roomRoute = require('./api/routes/rooms');
+const hotelRoute = require('./api/routes/hotels');
 
 app.use(morgan('dev'));
 
@@ -36,9 +36,9 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.use('/users', userRoutes);
-app.use('/rooms', roomRoutes);
-app.use('/hotels', hotelRoutes);
+app.use('/users', userRoute);
+app.use('/rooms', roomRoute);
+app.use('/hotels', hotelRoute);
 
 app.use((req, res, next) => {
 	const error = new Error('Not Found');

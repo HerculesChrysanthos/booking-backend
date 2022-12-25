@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const hotelSchema = mongoose.Schema({
-    hotelId: mongoose.Schema.Types.ObjectId,
+    //hotelId: mongoose.Schema.Types.ObjectId,
     adminId: {
         type: mongoose.Schema.Types.ObjectId,
         required: true

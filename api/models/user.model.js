@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const userSchema = mongoose.Schema({
-    userId: mongoose.Schema.Types.ObjectId,
+    //userId: mongoose.Schema.Types.ObjectId,
     name: {
         type: String,
         required: true,
@@ -23,6 +23,10 @@ const userSchema = mongoose.Schema({
         type: Boolean,
         default: false,
     }
-});
+},
+{ 
+    timestamps: true 
+}
+);
 
 module.exports = mongoose.model('User', userSchema);

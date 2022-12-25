@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const roomSchema = mongoose.Schema({
-    roomId: mongoose.Schema.Types.ObjectId,
+    //roomId: mongoose.Schema.Types.ObjectId,
     description: String,
     price: {
         type: Number, 
